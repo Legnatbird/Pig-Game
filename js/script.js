@@ -1,5 +1,3 @@
-'use strict';
-
 const $ = (e) => document.querySelector(e)
 const $$ = (e) => document.querySelectorAll(e)
 
@@ -19,7 +17,7 @@ var currentPlayer = ($(".player--active"))
 
 btn_roll.addEventListener("click", () => {
     var dice = Math.trunc(Math.random() * 6) + 1
-    img.src = `dice-${dice}.png`
+    img.src = `img/dice-${dice}.png`
     img.classList.remove("hidden")
     if (dice === 1) {
         if (currentPlayer.classList.contains("player--0")) {
